@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <!-- Green Background -->
+  <rect width="100%" height="100%" fill="#00FF00" rx="5" />
+
+  <!-- Play Button -->
+  <polygon points="15,12.5 35,25 15,37.5" fill="#000" />
+</svg>

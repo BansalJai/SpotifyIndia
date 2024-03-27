@@ -1,0 +1,314 @@
+*{margin: 0;padding: 0;}
+
+body
+{
+    background-color: black;
+}
+
+.boxleft
+{
+    position: absolute;
+    /* background-color: #242424; */
+    height:95%;
+    /* border:1px solid red; */
+    width:25%;
+    border-radius: 10px;
+    margin:20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.boxicons
+{
+    /* position: absolute; */
+    border-radius: 10px;
+    background-color: #242424;
+    height:30%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid red; */
+}
+.boxicons img:first-child
+{
+    height: 10vh;
+    width:10vw;
+    margin:10px;
+
+}
+.boxicons img:nth-child(2)
+{
+    height:20%;
+    position: relative;
+    left:-10vw;
+    margin: 3px 10px;
+}
+.boxicons img:nth-child(3)
+{
+    height:20%;
+    position: relative;
+    left:-10vw;
+    margin: 3px 10px;
+}
+
+.boxright
+{
+    position: absolute;
+    
+    background-color: #242424;
+    height:95%;
+    /* border:1px solid rgb(102, 255, 0); */
+    width:70%;
+    left:25%;
+    border-radius: 10px;
+    margin: 17px 40px;
+    
+}
+.search
+{
+    position: absolute;
+    top:23%;
+    font-size: 20px;
+    font-weight: 900;
+    left:20%;
+}
+.home
+{
+    position: absolute;
+    top:16%;
+    font-size: 20px;
+    font-weight: 900;
+    left:20%;
+}
+
+.uppercont
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin:0px 20px;
+    height:15%;
+    
+
+}
+.signup
+{
+    background-color: black;
+    color: white;
+    border-radius: 10px 20px;
+    font-size: 16px;
+    height: 42px;
+    width: 85px;
+    margin: 10px;
+    padding: 10px;
+
+}
+.login
+{
+    background-color: black;
+    color: white;
+    border-radius: 10px 20px;
+    font-size: 16px;
+    height: 42px;
+    width: 85px;
+    margin: 10px;
+    padding: 10px;
+}
+.btns .signup:hover
+{
+    font-size: 17px;
+    /* border: 1px solid white; */
+    font-style: bold;
+}
+.btns .login:hover
+{
+    font-size: 17px;
+    /* border: 1px solid rgba(2, 2, 2, 0); */
+    font-style: bold;
+}
+.boxright .downcont
+{
+    position: absolute;
+    height:85%;
+    width:100%;
+    /* border:1px solid red; */
+    top:15%;
+    /* overflow-x: scroll; */
+    overflow-y: scroll;
+    /* gap:40%; */
+}
+.player
+{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    width:70%;
+    height:10%;
+    border-radius: 10px 10px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    /* z-index: 0; */
+}
+
+.playbtns
+{
+    display: flex;
+    justify-content: space-between;
+    /* align-items:center; */
+    /* position: absolute;
+    top:25%; */
+    gap: 14px;
+    height: 50%;
+    margin: 10px;
+}
+.seekbar
+{
+    border:2px solid black;
+    width:98%;
+    height: 1%;
+    border-radius: 5px;
+    position: relative;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+.seekbar .circle
+{
+    height:10px;
+    width: 10px;
+    border:1px solid black;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    transition: left 0.001s;
+    
+}
+
+.cardcont
+{
+    /* position: absolute;
+     */
+    /* border: 1px solid red; */
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    gap:  5%;
+    padding: 10px;
+
+}
+.card
+{
+    position: relative;
+    height:60%;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid red; */
+    border-radius: 10px;
+    /* left:3%; */
+    gap:15px;
+    /* border:1px solid black; */
+    padding:20px;
+}
+.card:hover
+{
+    background-color: #535353;
+    border:1px solid white;
+}
+.card .imga
+{
+    width:85%;
+    height:65%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin:16px;
+
+}
+
+.card span:nth-child(2)
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card span:nth-child(3)
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.card .pbcard
+{
+    position: absolute;
+    /* height:10%; */
+    /* position: relative; */
+    /* right:0%; */
+    width:20%;
+    right:15%;
+    bottom:-100%;
+    /* display: none; */
+    background-color: rgba(14, 233, 14, 0.842);
+    border-radius: 30px;
+    /* display: flex; */
+    /* justify-content:space-evenly; */
+    /* align-items: end; */
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    /* transform: translateY(0%); */
+
+}
+.card:hover .pbcard
+{
+    opacity: 1;
+    bottom:30%;
+}
+
+
+
+
+
+
+/* For Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1fdf64; /* Set the color of the scrollbar thumb to a darker green */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #212121; /* Set the color of the scrollbar track to a dark gray */
+}
+
+/* For Firefox */
+/* Note: Firefox currently doesn't support styling the scrollbar, but you can use this for future compatibility */
+/* For Firefox Quantum (>= 64) */
+html {
+    scrollbar-color: #1fdf64 #212121; /* thumb color track color */
+}
+
+/* For Firefox (version < 64) */
+html {
+    scrollbar-face-color: #1fdf64;
+    scrollbar-track-color: #212121;
+}
+
+/* For Internet Explorer and Edge */
+/* Note: Internet Explorer and Edge currently don't support styling the scrollbar */
+/* You can use this for future compatibility */
+/* The values are example values, you might need to adjust them based on your design */
+html {
+    scrollbar-3dlight-color: #1fdf64;
+    scrollbar-highlight-color: #1fdf64;
+    scrollbar-face-color: #1fdf64;
+    scrollbar-shadow-color: #1fdf64;
+    scrollbar-darkshadow-color: #1fdf64;
+}
+
+
+
